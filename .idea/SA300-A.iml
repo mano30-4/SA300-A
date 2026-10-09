@@ -3,8 +3,9 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/dsa/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="uv (dsa)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="uv (SA300-A)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
