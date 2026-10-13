@@ -9,7 +9,7 @@ arguments are variables passed into parameters
 
 
 def fun1(a,b,c):
-    print(a,b,c)
+    print("fun1",a,b,c)
 
 ## postional arguments
 fun1(1,2,3,)
@@ -22,7 +22,15 @@ fun1(a=1,c=3,b=2)
 print("\n")
 ## both yields same result, order doesn't matter in keyword arguments
 
-## keyword and positional arguments are used toegther rule->(positional, keyword)
+'''default arguments function'''
+# by defualt c=0 is passed to fun2 unless specifically mentioned
+def fun2(a,b,c=0):
+    print("fun2",a,b,c,)
+
+fun2(1,2)
+
+
+## keyword and positional arguments can be used toegther rule->(positional, keyword)
 #fun1(a=1,2,3) -> throws a error
 fun1(1,c=2,b=1) #-> works fine
 
@@ -32,7 +40,8 @@ fun1(1,c=2,b=1) #-> works fine
 ## **kargs as function parameter helps u collect variable length key word arguments (gets stored as dictionary after collection)
 ## order -> *args,**kargs
 print("\n")
-def fun2(a,b,c,*args,**kargs):
+def fun3(a,b,c,*args,**kargs):
+    print("fun3")
     print(a,b,c)
     print("\n")
     for i in args:
@@ -41,4 +50,5 @@ def fun2(a,b,c,*args,**kargs):
     for i in kargs:
         print(kargs[i],end=" ")
 
-fun2(1,2,3,4,5,6,seven=7,eight=8,nine=9)
+fun3(1,2,3,4,5,6,seven=7,eight=8,nine=9)
+
