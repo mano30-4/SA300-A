@@ -14,7 +14,7 @@ class Item():
                               # if we use allitems. python wil search for it in funtion scope(__init__) then it will go for main class (global scope) but our list(variable) is in class Named 'Item' so we need to reference it so python searches there
   @classmethod
   def instantiate_from_csv(cls):
-    with open('items.csv','r') as f:
+    with open('items.csv', 'r') as f:
        reader = csv.DictReader(f)
        items = list(reader)
 
